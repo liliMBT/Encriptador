@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
+        
+
+    </head>
+
+    <body>
+
+      <header>
+
+        <img src="logo/Logo.jpg">
+ 
+      </header>
+
+      <main>
+
+        <section>
+
+            <textarea id="textoEncrip" placeholder="Ingrese el texto aqui"></textarea>
+
+            <div class="aviso">
+
+              <img src="bi-exclamation/bi_exclamation-circle-fill .png">
+              <p>Solo letras minúsculas y sin acento</p>
+
+            </div>
+        
+            <div class="botonesPrincipales">
+
+              <input id="botonEncriptar" type="button" onclick="encriptar()" value="Encriptar">
+              
+              <input id="botonDesencriptar" type="button" onclick="desencriptar()" value="Desencriptar">
+
+            </div>
+
+        </section>
+
+        <section class="rectangulo">
+
+          <textarea readonly class="mensajeEncriptado"></textarea>
+
+          <img id="muñeco" src="muñeco/muñeco.jpg">
+
+          <div class="mensajeMuñeco">
+            <p id="ningunMensaje">Ningún mensaje fue encontrado</p> 
+            <P id="ingresaTexto">Ingresa el texto que desees encriptar o desencriptar</P>   
+          </div>
+
+          <input id="botonCopiar" type="button" onclick="copiar()" value="Copiar">
+          
+        </section>
+
+      </main>
+
+      <footer>
+
+        <p class="copyright">&copy Copyright Ecncriptador Lili B - 2023</p>
+  
+      </footer>
+
+      <script src="script.js"></script>
+    
+    </body>
+
+    
+    
+</html>
+
+
+
+
